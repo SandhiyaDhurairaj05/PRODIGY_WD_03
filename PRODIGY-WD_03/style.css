@@ -1,0 +1,86 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+    text-shadow: 2px 2px #fff;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: #ffe4e6;  /* Light pink for the board */
+    padding: 15px;        /* Adds spacing around cells */
+    border-radius: 20px;  /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+
+.cell {
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cell:hover {
+    transform: scale(1.1);
+    background: #f0f0f0;
+}
+
+button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #f5576c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f093fb;
+}
+
+.game-status {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #555;
+}
